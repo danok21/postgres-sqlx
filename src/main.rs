@@ -24,14 +24,14 @@ async fn main() -> anyhow::Result<()> {
     */
 
     /*
-    let sql=  "DELETE FROM student WHERE  hobby = '踢足球'";
-    let count=sqlx::query(sql).bind(18).execute(&pool).await?;
+    let sql=  "DELETE FROM student WHERE  hobby = '跑步'";
+    let count = sqlx::query(sql).execute(&pool).await?;
     println!("{}",count);
     */
 
     /*
-    let sql=  "UPDATE student SET hobby = '打羽毛球' WHERE id = 1 ";
-    let count=sqlx::query(sql).bind(1).execute(&pool).await?;
+    let sql=  "UPDATE student SET hobby = '打羽毛球和骑车' WHERE id = 2 ";
+    let count=sqlx::query(sql).execute(&pool).await?;
     println!("{}",count);
     */
 
