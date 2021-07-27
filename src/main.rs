@@ -8,7 +8,7 @@ use std::env;
 async fn main() -> anyhow::Result<()> {
 
     // 单个连接
-     let mut pool = Pool::<PgConnection>::new(&env::var("DATABASE_URL")?).await?;
+    let mut pool = Pool::<PgConnection>::new(&env::var("DATABASE_URL")?).await?;
 
     // 可以对连接池配置一些参数
     /*
